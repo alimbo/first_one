@@ -1,0 +1,56 @@
+//
+#include<iostream>
+using namespace std;
+int main()
+{
+    char s,c;
+    int n1,n2,ans;
+do{
+    cout<<"Enter the First number, operator, Second number:  ";
+    cin>>n1>>s>>n2;
+    switch(s)
+    {
+    case '+':
+        {
+        ans=n1+n2;
+         cout<<"Addition of two numbers: "<<ans;
+         break;
+        }
+        case '-':
+        {
+        ans=n1-n2;
+         cout<<"Subtraction of two numbers: "<<ans;
+         break;
+        }
+        case '*':
+        {
+         ans=n1*n2;
+         cout<<"Multiplication of two numbers: "<<ans;
+         break;
+        }
+        case '/':
+        {
+         ans=n1/n2;
+         cout<<"Division of two numbers: "<<ans;
+         break;
+        }
+        case '%':
+        {
+         ans=n1%n2;
+         cout<<"Reminder of two numbers: "<<ans;
+         break;
+        }
+        default:
+        {
+            cout<<"Error: Wrong Symbol  ";
+        }
+    }
+    cout<<"\n\n\n Do you want to continue: y/n?:";
+    cin>>c;
+
+}
+  while(c=='y');
+
+cout<<"Thank You!:";
+
+}
